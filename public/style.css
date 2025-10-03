@@ -1,0 +1,24 @@
+:root {
+  --bg: #0f172a;
+  --fg: #e2e8f0;
+  --accent: #22d3ee;
+  --grid: #1f2937;
+  --apple: #ef4444;
+  --snake: #10b981;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 50% -20%, #111827 0%, var(--bg) 60%);
+  color: var(--fg); display: grid; place-items: center;
+}
+.wrap { text-align: center; padding: 1.5rem; width: min(640px, 100%); }
+h1 { margin: 0 0 1rem; font-weight: 800; letter-spacing: .02em; }
+canvas {
+  width: 100%; height: auto; border-radius: 16px; background: #0b1220;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+}
+.hud { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-top: .75rem; align-items: center; }
+.hud > div { background: rgba(255,255,255,.05); padding: .5rem .75rem; border-radius: 12px; }
+.controls { grid-column: 1 / -1; opacity: .8; font-size: .9rem; }
